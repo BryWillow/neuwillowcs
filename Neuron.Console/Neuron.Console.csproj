@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Neuron.DendriteLib\Neuron.DendriteLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\Neuron.AxonLib\Neuron.AxonLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\Neuron.SomaLib\Neuron.SomaLib.csproj" />
+  </ItemGroup>
+
 </Project>

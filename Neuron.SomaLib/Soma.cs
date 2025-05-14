@@ -1,6 +1,6 @@
 ﻿namespace Neuron.SomaLib;
 
-public class Class1
+public class Soma
 {
 
 }

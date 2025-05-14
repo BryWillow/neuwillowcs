@@ -1,9 +1,6 @@
 ﻿namespace Neuron.DendriteLib;
 
-public class Dendrite(IEnumerable<Neurotransmitter> neurotransmittersReceived)
+public class Dendrite
 {
-  public Dendrite( )
-  {
-    Neuron.CommonLib.
-  }
+
 }

@@ -1,6 +1,6 @@
 ﻿namespace Neuron.AxonLib;
 
-public class Class1
+public class Axon
 {
 
 }

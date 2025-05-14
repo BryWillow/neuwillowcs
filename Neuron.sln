@@ -5,6 +5,18 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.Console", "Neuron.Console\Neuron.Console.csproj", "{9A2AE727-0AC7-48AE-A50F-1031914A009E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.DendriteLib", "Neuron.DendriteLib\Neuron.DendriteLib.csproj", "{9F9AACFE-FC0F-4FFA-B61E-751924D73D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.AxonLib", "Neuron.AxonLib\Neuron.AxonLib.csproj", "{FD5BD04B-6347-4DF7-B0D6-5632574DBAC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.SomaLib", "Neuron.SomaLib\Neuron.SomaLib.csproj", "{648CC1D1-4D41-4C76-B8B0-7A926634237E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.CommonLib", "Neuron.CommonLib\Neuron.CommonLib.csproj", "{C9E17CB9-6645-49DE-B9E2-F7B319EC5660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.NeurotransmitterLib", "Neuron.NeurotransmitterLib\Neuron.NeurotransmitterLib.csproj", "{C88842DE-C496-499F-85DA-86BAE29F7573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.NeuronLib", "Neuron.NeuronLib\Neuron.NeuronLib.csproj", "{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +30,29 @@ Global
 		{9A2AE727-0AC7-48AE-A50F-1031914A009E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A2AE727-0AC7-48AE-A50F-1031914A009E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A2AE727-0AC7-48AE-A50F-1031914A009E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F9AACFE-FC0F-4FFA-B61E-751924D73D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9AACFE-FC0F-4FFA-B61E-751924D73D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9AACFE-FC0F-4FFA-B61E-751924D73D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9AACFE-FC0F-4FFA-B61E-751924D73D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5BD04B-6347-4DF7-B0D6-5632574DBAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5BD04B-6347-4DF7-B0D6-5632574DBAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5BD04B-6347-4DF7-B0D6-5632574DBAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5BD04B-6347-4DF7-B0D6-5632574DBAC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{648CC1D1-4D41-4C76-B8B0-7A926634237E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648CC1D1-4D41-4C76-B8B0-7A926634237E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648CC1D1-4D41-4C76-B8B0-7A926634237E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{648CC1D1-4D41-4C76-B8B0-7A926634237E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E17CB9-6645-49DE-B9E2-F7B319EC5660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E17CB9-6645-49DE-B9E2-F7B319EC5660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E17CB9-6645-49DE-B9E2-F7B319EC5660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E17CB9-6645-49DE-B9E2-F7B319EC5660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C88842DE-C496-499F-85DA-86BAE29F7573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88842DE-C496-499F-85DA-86BAE29F7573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88842DE-C496-499F-85DA-86BAE29F7573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88842DE-C496-499F-85DA-86BAE29F7573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

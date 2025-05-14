@@ -1,4 +1,6 @@
-﻿namespace Neuron.CommonLib;
+﻿using System.Reflection;
+
+namespace Neuron.CommonLib;
 
 /// <summary>
 /// NOTE: This class was taken directly from Microsoft.
@@ -13,11 +15,11 @@ public abstract class EnumClassBase : IComparable
 
     public int Id { get; private set; }
 
-    protected Enumeration(int id, string name) => (Id, Name) = (id, name);
+    protected EnumClassBase(int id, string name) => (Id, Name) = (id, name);
 
     public override string ToString() => Name;
 
-    public static IEnumerable<T> GetAll<T>() where T : Enumeration =>
+    public static IEnumerable<T> GetAll<T>() where T : EnumClassBase =>
         typeof(T).GetFields(BindingFlags.Public |
                             BindingFlags.Static |
                             BindingFlags.DeclaredOnly)
@@ -26,7 +28,7 @@ public abstract class EnumClassBase : IComparable
 
     public override bool Equals(object obj)
     {
-        if (obj is not Enumeration otherValue)
+        if (obj is not EnumClassBase otherValue)
         {
             return false;
         }
@@ -37,5 +39,10 @@ public abstract class EnumClassBase : IComparable
         return typeMatches && valueMatches;
     }
 
-    public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
+    public int CompareTo(object other) => Id.CompareTo(((EnumClassBase)other).Id);
+
+    public override int GetHashCode()
+    {
+        throw new NotImplementedException();
+    }
 }
