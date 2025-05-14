@@ -7,7 +7,7 @@
 /// and all OO functionality.
 /// </summary>
 
-public abstract class EnumBase : IComparable
+public abstract class EnumClassBase : IComparable
 {
     public string Name { get; private set; }
 
@@ -38,6 +38,4 @@ public abstract class EnumBase : IComparable
     }
 
     public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
-
-    // Other utility methods ...
 }
