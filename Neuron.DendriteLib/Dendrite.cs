@@ -1,6 +1,7 @@
 ﻿namespace Neuron.DendriteLib;
 
-public class Dendrite
-{
+  public class Dendrite : IDendrite
+  {
 
-}
+    public IEnumerable<IDendriteBranch> Branches { get; set; }
+  }
