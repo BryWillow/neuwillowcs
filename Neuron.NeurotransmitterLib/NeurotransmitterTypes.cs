@@ -13,23 +13,41 @@ using Neuron.CommonLib;
 public class NeurotransmitterType
     : Enumeration
 {
-    // Fight-or-Flight.
-    public static NeurotransmitterType Adrenaline = new(3, nameof(Adrenaline));
+  // Function: Memory, arousal, attention, motivation.
+  public static NeurotransmitterType Acetylcholine = new (1, nameof(Acetylcholine));
 
-    // Pleasure.
-    public static NeurotransmitterType Dopamine = new(1, nameof(Dopamine));
+  // Function: Pain, inflammation.
+  public static NeurotransmitterType Atp = new (1, nameof(Atp));
 
-    // Euphoria.
-    public static NeurotransmitterType Endorphins = new(1, nameof(Endorphins));
+  // Function: Fight-or-Flight. A.K.A., Adrenaline.
+  public static NeurotransmitterType Epinephrine = new(1, nameof(Epinephrine));
 
-    // Calming.
-    public static NeurotransmitterType Gaba = new(2, nameof(Gaba));
+  // Function: Pleasure.
+  public static NeurotransmitterType Dopamine = new(1, nameof(Dopamine));
 
-    // Memory.
-    public static NeurotransmitterType Glutamate = new(2, nameof(Glutamate));
+  // Function: Euphoria.
+  public static NeurotransmitterType Endorphins = new(1, nameof(Endorphins));
 
-    //Mood.
-    public static NeurotransmitterType Serotonin = new(3, nameof(Serotonin));
+  // Function: Calming.
+  public static NeurotransmitterType Gaba = new(1, nameof(Gaba));
+
+  // Function: Memory.
+  public static NeurotransmitterType Glutamate = new(1, nameof(Glutamate));
+
+  // Function: Calming, Inihibitory, secondary to GABA.
+  public static NeurotransmitterType Glycine = new(1, nameof(Glycine));
+
+  // Function: Wakefulness, Alertness.
+  public static NeurotransmitterType Histamine = new(1, nameof(Histamine));
+
+  // Function: Mood, Arousal, Vigilance, Memory.
+  public static NeurotransmitterType Norepinephrine = new(1, nameof(Norepinephrine));
+
+  // Function: Social bonding.
+  public static NeurotransmitterType Oxytocin = new(1, nameof(Oxytocin));
+
+  // Function: Mood.
+  public static NeurotransmitterType Serotonin = new(1, nameof(Serotonin));
 
     public NeurotransmitterType(int id, string name)
         : base(id, name)
