@@ -1,5 +1,7 @@
 using System.Reflection;
 
+namespace Neuron.CommonLib;
+
 // Note: this code was written by Microsoft, or at least came from their website:
 // https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types
 // Admittedly, I don't fully understand the BindingFlags.

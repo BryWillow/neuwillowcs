@@ -1,56 +1,103 @@
 namespace Neuron.NeurotransmitterLib;
 
-using Neuron.CommonLib;
+using System.Reflection;
 
 /// <summary>
 /// TODO: A lot of work here:
 /// (1) This is not a comprehensive list of neurotransmitters.
-/// (2) Classify these neurotransmitters into Small-Molecule Receptors (e.g. Glutamate)
-///     and Neuropeptides (insulin and its impact).
-/// (3) Neurotransmitters are multi-faceted, e.g., Gaba might be Calming and other things.
-/// (4) Where are specific types of neurotransmitters produced in higher concentrations.
+/// (2) What regions in the brain can neurotransmitters have different effect types?
+/// (3) What is the root cause of why neurotransmitters can have different effect types?
 /// </summary>
 public class NeurotransmitterType
-    : Enumeration
+    : NeurotransmitterTypeEnum
 {
-  // Function: Memory, arousal, attention, motivation.
-  public static NeurotransmitterType Acetylcholine = new (1, nameof(Acetylcholine));
+    // Function: Memory, arousal, attention, motivation.
+    public static NeurotransmitterType Acetylcholine = new(1, Classification.SmallMolecule, EffectType.Excitatory, nameof(Acetylcholine));
 
-  // Function: Pain, inflammation.
-  public static NeurotransmitterType Atp = new (1, nameof(Atp));
+    // Function: Pain, inflammation. AKA, ATP.
+    public static NeurotransmitterType AdenosineTriphosphate = new(2, Classification.SmallMolecule, EffectType.InhibitoryAndExcitatory, nameof(AdenosineTriphosphate));
 
-  // Function: Fight-or-Flight. A.K.A., Adrenaline.
-  public static NeurotransmitterType Epinephrine = new(1, nameof(Epinephrine));
+    // Function: Fight-or-Flight. AKA, Adrenaline.
+    public static NeurotransmitterType Epinephrine = new(3, Classification.SmallMolecule, EffectType.InhibitoryAndExcitatory, nameof(Epinephrine));
 
-  // Function: Pleasure.
-  public static NeurotransmitterType Dopamine = new(1, nameof(Dopamine));
+    // Function: Pleasure.
+    public static NeurotransmitterType Dopamine = new(4, Classification.SmallMolecule, EffectType.InhibitoryAndExcitatory, nameof(Dopamine));
 
-  // Function: Euphoria.
-  public static NeurotransmitterType Endorphins = new(1, nameof(Endorphins));
+    // Function: Euphoria.
+    public static NeurotransmitterType Endorphins = new(5, Classification.SmallMolecule, EffectType.Inhibitory, nameof(Endorphins));
 
-  // Function: Calming.
-  public static NeurotransmitterType Gaba = new(1, nameof(Gaba));
+    // Function: Calming.
+    public static NeurotransmitterType Gaba = new(6, Classification.AminoAcid, EffectType.InhibitoryAndExcitatory, nameof(Gaba));
 
-  // Function: Memory.
-  public static NeurotransmitterType Glutamate = new(1, nameof(Glutamate));
+    // Function: Memory.
+    public static NeurotransmitterType Glutamate = new(7, Classification.SmallMolecule, EffectType.Excitatory, nameof(Glutamate));
 
-  // Function: Calming, Inihibitory, secondary to GABA.
-  public static NeurotransmitterType Glycine = new(1, nameof(Glycine));
+    // Function: Calming, Inihibitory, secondary to GABA.
+    public static NeurotransmitterType Glycine = new(7, Classification.AminoAcid, EffectType.Inhibitory, nameof(Glycine));
 
-  // Function: Wakefulness, Alertness.
-  public static NeurotransmitterType Histamine = new(1, nameof(Histamine));
+    // Function: Wakefulness, Alertness.
+    public static NeurotransmitterType Histamine = new(8, Classification.SmallMolecule, EffectType.InhibitoryAndExcitatory, nameof(Histamine));
 
-  // Function: Mood, Arousal, Vigilance, Memory.
-  public static NeurotransmitterType Norepinephrine = new(1, nameof(Norepinephrine));
+    // Function: Mood, Arousal, Vigilance, Memory.
+    public static NeurotransmitterType Norepinephrine = new(9, Classification.SmallMolecule, EffectType.InhibitoryAndExcitatory, nameof(Norepinephrine));
 
-  // Function: Social bonding.
-  public static NeurotransmitterType Oxytocin = new(1, nameof(Oxytocin));
+    // Function: Social bonding.
+    public static NeurotransmitterType Oxytocin = new(10, Classification.NeuroactivePeptide, EffectType.InhibitoryAndExcitatory, nameof(Oxytocin));
 
-  // Function: Mood.
-  public static NeurotransmitterType Serotonin = new(1, nameof(Serotonin));
+    // Function: Mood.
+    public static NeurotransmitterType Serotonin = new(11, Classification.SmallMolecule, EffectType.Inhibitory, nameof(Serotonin));
 
-    public NeurotransmitterType(int id, string name)
-        : base(id, name)
+    public NeurotransmitterType(int id, Classification classification, EffectType effectType, string name)
+        : base(id, classification, effectType, name)
     {
     }
+}
+
+// Note: this code was written by Microsoft, or at least came from their website:
+// https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types
+// Admittedly, I don't fully understand the BindingFlags.
+// TODO: Become more familiar with the Enumeration class.
+public abstract class NeurotransmitterTypeEnum : IComparable
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; }
+
+    public EffectType EffectType { get; set; }
+
+    public Classification Classification { get; set; }
+
+    protected NeurotransmitterTypeEnum(int id, Classification classification, EffectType effectType, string name) =>
+        (Id, Classification, EffectType, Name) = (id, classification, effectType, name);
+
+    public override string ToString() => Name;
+
+    public static IEnumerable<T> GetAll<T>() where T : NeurotransmitterTypeEnum =>
+        typeof(T).GetFields(BindingFlags.Public |
+                            BindingFlags.Static |
+                            BindingFlags.DeclaredOnly)
+                .Select(f => f.GetValue(null))
+                .Cast<T>();
+
+    public override bool Equals(object obj)
+    {
+        if (obj is not NeurotransmitterTypeEnum otherValue)
+        {
+            return false;
+        }
+
+        var typeMatches = GetType().Equals(obj.GetType());
+        var valueMatches = Id.Equals(otherValue.Id);
+
+        return typeMatches && valueMatches;
+    }
+
+    public int CompareTo(object other) => Id.CompareTo(((NeurotransmitterTypeEnum)other).Id);
+
+    public override int GetHashCode()
+    {
+        throw new NotImplementedException();
+    }
+
+    // Other utility methods ...}
 }

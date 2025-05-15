@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+      <ProjectReference Include="..\Neuron.CommonLib\Neuron.CommonLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\Neuron.NeurotransmitterLib\Neuron.NeurotransmitterLib.csproj" />
+  </ItemGroup>
+
 </Project>
