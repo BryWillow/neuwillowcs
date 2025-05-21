@@ -15,17 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.CommonLib", "Neuron.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.NeurotransmitterLib", "Neuron.NeurotransmitterLib\Neuron.NeurotransmitterLib.csproj", "{C88842DE-C496-499F-85DA-86BAE29F7573}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.NeuronLib", "Neuron.NeuronLib\Neuron.NeuronLib.csproj", "{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuron.AnatomyLib", "Neuron.AnatomyLib\Neuron.AnatomyLib.csproj", "{115992FA-9FD0-40D9-A2C8-FCB6C58237E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{9EBDD1EA-7CBC-490A-85ED-0959D3D28639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9A2AE727-0AC7-48AE-A50F-1031914A009E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -52,13 +49,16 @@ Global
 		{C88842DE-C496-499F-85DA-86BAE29F7573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C88842DE-C496-499F-85DA-86BAE29F7573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C88842DE-C496-499F-85DA-86BAE29F7573}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB47BFD1-5EA2-43A9-AC3B-63DE77173F2A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{115992FA-9FD0-40D9-A2C8-FCB6C58237E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{115992FA-9FD0-40D9-A2C8-FCB6C58237E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{115992FA-9FD0-40D9-A2C8-FCB6C58237E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{115992FA-9FD0-40D9-A2C8-FCB6C58237E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBDD1EA-7CBC-490A-85ED-0959D3D28639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBDD1EA-7CBC-490A-85ED-0959D3D28639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBDD1EA-7CBC-490A-85ED-0959D3D28639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBDD1EA-7CBC-490A-85ED-0959D3D28639}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

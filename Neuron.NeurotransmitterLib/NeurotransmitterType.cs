@@ -11,6 +11,7 @@ using System.Reflection;
 public class NeurotransmitterType
     : NeurotransmitterTypeEnum
 {
+    public static NeurotransmitterType Invalid = new(0, Classification.Invalid, EffectType.Invalid, string.Empty);
     // Function: Memory, arousal, attention, motivation.
     public static NeurotransmitterType Acetylcholine = new(1, Classification.SmallMolecule, EffectType.Excitatory, nameof(Acetylcholine));
 

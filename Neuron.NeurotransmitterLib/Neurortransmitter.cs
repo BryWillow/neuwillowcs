@@ -1,4 +1,4 @@
-﻿namespace NeurotransmitterLib;
+﻿namespace Neuron.NeurotransmitterLib;
 
 /// <summary>
 /// All neurotransmitters have a few properties in common:
@@ -7,5 +7,15 @@
 /// </summary>
 public class Neurotransmitter
 {
+  private Neurotransmitter() { }
 
+  public Neurotransmitter Create(NeurotransmitterType neurotransmitterType)
+  {
+    if (neurotransmitterType == NeurotransmitterType.Invalid)
+      throw new ArgumentException("Attempt to create a Neurotransmitter with an invalid type");
+
+    return new Neurotransmitter();
+  }
+
+  public NeurotransmitterType Type { get; }
 }

@@ -5,6 +5,7 @@ namespace Neuron.NeurotransmitterLib;
 public class EffectType
     : EffectTypeEnum
 {
+  public static EffectType Invalid = new(0, nameof(Invalid));
   public static EffectType Inhibitory = new(1, nameof(Inhibitory));
   public static EffectType Excitatory = new(2, nameof(Excitatory));
   public static EffectType Modulatory = new(3, nameof(Modulatory));
