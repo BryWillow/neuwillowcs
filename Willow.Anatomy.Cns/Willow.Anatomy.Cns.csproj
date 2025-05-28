@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Brain/Cerebellum/" />
+    <Folder Include="Brain/Domain/" />
+    <Folder Include="Domains/" />
+    <Folder Include="Domains/AdvancedPractice/" />
+    <Folder Include="Domains/Consultation/" />
+    <Folder Include="Domains/Education/" />
+    <Folder Include="Domains/Leadership/" />
+    <Folder Include="Domains/Research/" />
+    <Folder Include="Regions/SpinalCord/MedullaObolngata/" />
+    <Folder Include="Regions/SpinalCord/Midbrain/" />
+    <Folder Include="Regions/SpinalCord/Pons/" />
+  </ItemGroup>
+
+</Project>

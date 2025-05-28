@@ -8,11 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../Neuron.AxonLib/Neuron.Axon.csproj" />
     <ProjectReference Include="..\Neuron.DendriteLib\Neuron.DendriteLib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-      <ProjectReference Include="..\Neuron.AxonLib\Neuron.AxonLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
