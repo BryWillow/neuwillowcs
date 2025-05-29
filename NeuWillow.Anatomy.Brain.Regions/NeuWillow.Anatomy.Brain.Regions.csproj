@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <Folder Include="BrainStem/" />
-    <Folder Include="Cerebrum/LeftCerebralCortex/LeftHemispheres/LeftLobes/CerebralCortex/" />
-    <Folder Include="Cerebrum/RightCerebralCortex/" />
+    <Folder Include="Cerebrum/CerebralCortices/" />
+    <Folder Include="Cerebrum/CerebralCortices/LeftCerebralCortex/" />
     <Folder Include="Cerebrum/Subcortical/" />
     <Folder Include="Diencephalon/" />
   </ItemGroup>
