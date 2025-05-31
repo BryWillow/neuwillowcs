@@ -9,7 +9,7 @@
       "name": "C#: Neuron.Console Debug",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/Neuron.Console/Neuron.Console.csproj"
+      "projectPath": "${workspaceFolder}/NeuWillow.Anatomy.Brain.Console/NeuWillow.Anatomy.Brain.Console.csproj"
     }
   ]
 }
