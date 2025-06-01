@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace NeuWillow.Anatomy.Brain.Regions.Cerebrum.CerebralCortices.CerebralHemispheres.RightHemisphere;
 
-namespace NeuWillow.Anatomy.Brain.Regions.Cerebrum.CerebralCortices.CerebralHemispheres.RightHemisphere
+public class RightCerebralHemisphere
 {
-    public class RightCerebralHemisphere
-    {
-        
-    }
+
 }
