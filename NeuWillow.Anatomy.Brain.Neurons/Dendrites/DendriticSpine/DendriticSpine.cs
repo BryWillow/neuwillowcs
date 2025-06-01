@@ -8,5 +8,5 @@ namespace NeuWillow.Anatomy.Brain.Neurons.Dendrites;
 /// </summary>
 public class DendriticSpine
 {
-
+    public NeurotransmitterDispatcher Dispatcher{ get; set; }
 }
