@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -14,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuWillow.Anatomy.Brain.ActionPotentials", "NeuWillow.Anatomy.Brain.ActionPotentials\NeuWillow.Anatomy.Brain.ActionPotentials.csproj", "{7532EDA4-37FC-4CAD-9CAE-F027AD2AE932}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuWillow.Anatomy.Brain.Neurons", "NeuWillow.Anatomy.Brain.Neurons\NeuWillow.Anatomy.Brain.Neurons.csproj", "{0CF547DC-A566-4E50-85C0-E3F651B581AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuWillow.Anatomy.Brain.Neurotransmitters", "NeuWillow.Anatomy.Brain.Neurons\NeuWillow.Anatomy.Brain.Neurotransmitters.csproj", "{0CF547DC-A566-4E50-85C0-E3F651B581AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuWillow.Anatomy.Brain.Console", "NeuWillow.Anatomy.Brain.Console\NeuWillow.Anatomy.Brain.Console.csproj", "{C5388A96-04D0-41EF-98DA-F17C40488F6A}"
 EndProject
@@ -43,6 +44,10 @@ Global
 		{7532EDA4-37FC-4CAD-9CAE-F027AD2AE932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7532EDA4-37FC-4CAD-9CAE-F027AD2AE932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7532EDA4-37FC-4CAD-9CAE-F027AD2AE932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF547DC-A566-4E50-85C0-E3F651B581AD}.Release|Any CPU.ActiveCfg = Release|Any CPU

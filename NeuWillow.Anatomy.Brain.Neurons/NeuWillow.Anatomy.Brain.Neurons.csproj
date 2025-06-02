@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NeuWillow.Anatomy.Brain.Neurotransmitters\NeuWillow.Anatomy.Brain.Neurotransmitters.csproj" />
+    <ProjectReference Include="..\NeuWillow.Anatomy.Brain.Common\NeuWillow.Anatomy.Brain.Common.csproj" />    
   </ItemGroup>
 
   <PropertyGroup>
@@ -9,5 +10,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
 </Project>

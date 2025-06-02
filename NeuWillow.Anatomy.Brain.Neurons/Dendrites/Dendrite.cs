@@ -11,10 +11,10 @@ public class Dendrite
     /// A single dendrite can receive multiple neurotransmitters simultaneously
     /// </summary>
     /// <param name="neuroTransmitter"></param>
-    public void Process(INeurotransmitter neuroTransmitter)
-    {
-
-    }
+    //public void Process(NeurotransmitterType neuroTransmitter)
+    //{
+    //
+    //}
 
     /// <summary>
     /// A single dendrite can process different types of neurotransmitters simultaneously.
